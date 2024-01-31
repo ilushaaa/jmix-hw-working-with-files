@@ -29,7 +29,7 @@
     <dialogMode height="600"
                 width="800"/>
     <layout spacing="true" expand="editActions">
-        <hbox>
+        <hbox width="AUTO">
             <form id="form" dataContainer="driverDc">
                 <column width="350px">
                     <textField id="firstNameField" property="firstName"/>
@@ -39,8 +39,8 @@
                     <dateField id="licenseExpiryDateField" property="license.expiryDate"/>
                 </column>
             </form>
-            <vbox align="MIDDLE_CENTER" spacing="true">
-                <hbox align="MIDDLE_CENTER">
+            <vbox spacing="true" width="AUTO">
+                <hbox>
                     <image id="driverPhoto"
                            dataContainer="driverDc"
                            property="photo"
@@ -48,7 +48,6 @@
                            height="148px"
                            scaleMode="FILL" />
                 </hbox>
-
                 <fileUpload id="uploadPhoto"
                             dataContainer="driverDc"
                             property="photo"
