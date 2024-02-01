@@ -39,15 +39,14 @@
                     <dateField id="licenseExpiryDateField" property="license.expiryDate"/>
                 </column>
             </form>
-            <vbox spacing="true" width="AUTO">
-                <hbox>
+            <vbox spacing="true" width="200px">
                     <image id="driverPhoto"
                            dataContainer="driverDc"
                            property="photo"
                            width="148px"
                            height="148px"
-                           scaleMode="FILL" />
-                </hbox>
+                           scaleMode="FILL"
+                           align="MIDDLE_CENTER"/>
                 <fileUpload id="uploadPhoto"
                             dataContainer="driverDc"
                             property="photo"
